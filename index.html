@@ -3,75 +3,755 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super strona</title>
-    <style>
-        * {
-            margin: 2rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: #424549;
-            color: lightgray;
-        }
-        body {
-            margin: 2rem;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-        }
-        p {
-            padding-left: 2rem;
-            padding-right: 2rem;
-            text-align: justify;
-        }
-        a {
-            color: lightblue;
-            margin: 0;
-        }
-        tr:first-child {
-            font-weight: bold;
-        }
-        td {
-            padding: 1rem;
-            border: 1px solid black;
-        }
-        .foggy {
-            width: 30rem;
-            height: 20rem;
-            background-image: url('foggy.jpg');
-            background-position: center center;
-            border-radius: 20%;
-        }
-        .valley {
-            position: relative;
-            left: 100rem;
-            width: 30rem;
-            height: 20rem;
-            background-image: url('valley.jpg');
-            background-position: center center;
-            border-radius: 20%;
-        }
-    </style>
+    <title>Tumblr podróba</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da95b4f6bf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="content">
-        <h1>Witaj na mojej stronie</h1>
-        <h2>Powstałej w ramach <a href="https://stepik.org/lesson/591505/step/4?unit=586464">zadania 4/15.2 stepik :)</a></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dicta ab laboriosam ipsum, reprehenderit, tempore quas asperiores deserunt, voluptates dolores quibusdam fugiat amet. Temporibus praesentium in facere impedit id ad quis, ipsam sequi eum vero incidunt quisquam. Magnam ipsam et, odio possimus consequuntur, ducimus quasi provident officiis doloribus incidunt voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium, qui sequi perspiciatis placeat vel unde voluptatem expedita obcaecati repellendus aut facilis nisi. Numquam nulla neque esse tenetur laboriosam modi et quis sed dicta quaerat, temporibus iure doloremque sapiente. Nisi velit eaque sunt deserunt aut minus blanditiis adipisci perspiciatis iusto?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta sunt blanditiis ipsa, repellat numquam hic tempore, soluta vel eaque quidem accusamus? Assumenda, corporis? Nam, at doloremque quis aperiam, minima obcaecati repellat earum quam odio modi delectus omnis maxime, veritatis inventore voluptatem numquam ea corporis nihil commodi iusto beatae deleniti?</p>
+    <div class="left-section">
+        <a href="https://www.tumblr.com/"><div id="logo"></div></a>
+        <p><i class="fa-regular fa-compass"></i> Odkrywaj</p>
+        <p><i class="fa-solid fa-palette"></i> Zmień paletę</p>
     </div>
-    <table>
-        <tr>
-        <td>Imię</td> <td>Drugie imię</td> <td>Nazwisko</td>
-        </tr>
-        <tr>
-        <td>Jan</td> <td>Janusz</td> <td>Kowalski</td>
-        </tr>
-        <tr>
-        <td>Anna</td> <td>-</td> <td>Nowak</td>
-        </tr>
-    </table>
-    <div class="foggy"><div class="valley"></div>
+    <div class="main">
+        <div id="nav">
+            <div class="categories">
+                <div class="category active">Rosnąca popularność</div>
+                <div class="category">Wybór ekipy</div>
+                <div class="category">Pora na odpowiedź</div>
+                <div class="category">Więcej<i class="fa-solid fa-arrow-turn-down"></i></div>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-chevron-right"></i>
+                <i class="fa-solid fa-grip"></i>
+                <i class="fa-solid fa-table-columns"></i>
+            </div>
+        </div>
+        <div class="trending">
+            <div class="trend-1">
+                <div class="num">1</div>
+                <div class="text">
+                    <div class="topic">Lorem, ipsum.</div>
+                    <div class="hashtags">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+            <div class="trend-2">
+                <div class="num">2</div>
+                <div class="text">
+                    <div class="topic">Itaque, quod?</div>
+                    <div class="hashtags">Perspiciatis unde ea a doloremque.</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+            <div class="trend-3">
+                <div class="num">3</div>
+                <div class="text">
+                    <div class="topic">Aut, id?</div>
+                    <div class="hashtags">Officia in sed porro quisquam!</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+            <div class="trend-4">
+                <div class="num">4</div>
+                <div class="text">
+                    <div class="topic">Numquam, quos?</div>
+                    <div class="hashtags">Molestias quod quidem ab id.</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+            <div class="trend-5">
+                <div class="num">5</div>
+                <div class="text">
+                    <div class="topic">Hic, nesciunt?</div>
+                    <div class="hashtags">Necessitatibus laborum totam eius expedita.</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+            <div class="trend-6">
+                <div class="num">6</div>
+                <div class="text">
+                    <div class="topic">Laborum, nobis.</div>
+                    <div class="hashtags">Quaerat voluptas nulla earum ad!</div>
+                </div>
+
+                <div class="icon"></div>
+            </div>
+            <div class="trend-7">
+                <div class="num">7</div>
+                <div class="text">
+                    <div class="topic">Numquam, porro!</div>
+                    <div class="hashtags">Tempore tenetur eum nobis quisquam?</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+            <div class="trend-8">
+                <div class="num">8</div>
+                <div class="text">
+                    <div class="topic">Voluptate, asperiores?</div>
+                    <div class="hashtags">Obcaecati, iusto atque ea a!</div>
+                </div>
+                <div class="icon"></div>
+            </div>
+        </div>
+        <div class="posts">
+            <!-- .post*40>.user>.avatar+.name>lorem1^.follow>{Obserwuj}^^.image+.about>.description>lorem4^.stats>.notki>b>{999}+span{ notek}^^.like>{Lubię to!} -->
+            <div class="post-1">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Lorem.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Lorem ipsum dolor sit.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-2">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Sunt!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Facilis perspiciatis iure similique?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-3">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Magni.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium nisi ipsam, rem vero incidunt sequi ex aut quaerat veritatis soluta.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-4">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Repellendus?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Sint hic eveniet porro?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-5">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Nemo.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Deleniti labore explicabo ipsa.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-6">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Atque?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Quo neque aliquam enim!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-7">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Voluptatum.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Incidunt nulla libero beatae!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-8">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Dicta.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Sequi deleniti dicta veritatis.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-9">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Ab!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quam corporis voluptas porro enim, quod eaque reiciendis aliquam voluptatibus dolorem ipsam eius, voluptate ea blanditiis voluptatem commodi nihil mollitia molestias corrupti sunt harum. Error nobis repellat vero modi tenetur, magnam dolores voluptas amet eius odio reiciendis molestiae laudantium ipsum quaerat?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-10">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Asperiores?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Commodi, enim? Laboriosam, dicta?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-11">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Doloribus!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Cupiditate, quam inventore! Placeat?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-12">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Tempore!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">In cupiditate culpa et!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-13">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Modi.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Expedita adipisci delectus nulla.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-14">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Magnam?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Laudantium accusantium quis iure?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-15">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Itaque.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Suscipit, pariatur debitis. Iure?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-16">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Repudiandae?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Non asperiores amet quidem!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-17">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Quaerat.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Porro obcaecati optio earum.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-18">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Non?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Doloribus, rem autem. Accusantium!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-19">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Repudiandae.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Odio quasi aliquid voluptatem?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-20">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Quos?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Ea saepe dicta eum.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-21">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Ipsa?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Laborum non quia quos.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-22">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Accusantium.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Ut facilis minima ipsam?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-23">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Nostrum.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Rerum deserunt itaque unde.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-24">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Aliquam!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Beatae odio tempore provident?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-25">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Earum.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Aliquam ab dolorum ea!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-26">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Deserunt!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Atque obcaecati blanditiis rem?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-27">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Excepturi!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Nisi, atque. Quibusdam, animi.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-28">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Nemo.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Quasi tenetur dolorem inventore?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-29">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Possimus?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Dicta maiores corporis autem!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-30">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Voluptatibus?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Corrupti dicta eveniet molestiae.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-31">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Illum.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Libero voluptatem dolorum facilis.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-32">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Quas!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Possimus ipsum distinctio itaque!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-33">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Voluptatem!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Quam veniam ab optio?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-34">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Enim.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Voluptatem, laboriosam sequi. Architecto.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-35">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Maxime.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Qui facilis nihil a?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-36">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Voluptatum!</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Soluta praesentium possimus consectetur!</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-37">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Reiciendis.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Porro, nulla. Officiis, perspiciatis?</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-38">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Repellendus.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Ea cum esse corrupti.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-39">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Esse?</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Nobis maiores aperiam nostrum.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-40">
+                <div class="user">
+                    <div class="avatar"></div>
+                    <div class="name">Unde.</div>
+                    <div class="follow">Obserwuj</div>
+                </div>
+                <div class="image"></div>
+                <div class="about">
+                    <div class="description">Dolore reiciendis atque nemo.</div>
+                    <div class="stats">
+                        <div class="notki"><b>999<span> notek</span></b></div>
+                        <div class="like">Lubię to!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right-section">
+        <div class="szukaj">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="szukaj" placeholder="Szukaj na Tumblrze">
+        </div>
+        <!-- .box>.title>.users>.user-$*4>.avatar+.description>.username>lorem1^.bio>lorem3^^.follow>Obserwuj -->
+        <div class="box">
+            <div class="title">Popularne blogi</div>
+            <div class="users">
+                <div class="user-1">
+                    <div class="avatar"></div>
+                    <div class="description">
+                        <div class="username">Lorem.</div>
+                        <div class="bio">Lorem, ipsum dolor.</div>
+                    </div>
+                    <div class="follow">Obserwuj <i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="user-2">
+                    <div class="avatar"></div>
+                    <div class="description">
+                        <div class="username">Incidunt.</div>
+                        <div class="bio">Incidunt, obcaecati modi.</div>
+                    </div>
+                    <div class="follow">Obserwuj <i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="user-3">
+                    <div class="avatar"></div>
+                    <div class="description">
+                        <div class="username">Fuga.</div>
+                        <div class="bio">Dolorum, quo non?</div>
+                    </div>
+                    <div class="follow">Obserwuj <i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="user-4">
+                    <div class="avatar"></div>
+                    <div class="description">
+                        <div class="username">Modi.</div>
+                        <div class="bio">Vel, asperiores esse.</div>
+                    </div>
+                    <div class="follow">Obserwuj <i class="fa-solid fa-x"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="text">Ta strona powstała jako ćwiczenie na kolokwium</div>
+        <div class="buttons">
+            <div class="button-1">
+                Rozumiem
+            </div>
+            <div class="button-2">
+                Zaloguj się
+            </div>
+        </div>
     </div>
 </body>
 </html>

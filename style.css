@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  font-family: "Lexend Deca", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 11fr 3fr;
+}
+
+.left-section {
+  margin-left: 1rem;
+}
+.left-section #logo {
+  margin-left: 4rem;
+  width: 144px;
+  height: 81px;
+  background-position: center center;
+  background-image: url("logo.png");
+  background-size: cover;
+}
+.left-section #logo:hover {
+  background-image: url("logo-hover.png");
+  cursor: pointer;
+}
+.left-section p {
+  margin-left: 2rem;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+.left-section p:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+
+.main {
+  border-left: solid 1px rgba(128, 128, 128, 0.491);
+  border-right: solid 1px rgba(128, 128, 128, 0.491);
+}
+.main #nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  display: flex;
+  font-weight: 600;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.491);
+}
+.main #nav .categories {
+  display: flex;
+}
+.main #nav .categories .category {
+  color: gray;
+  padding: 1rem 0.5rem;
+}
+.main #nav .categories .category i {
+  color: gray;
+  padding-left: 0.4rem;
+}
+.main #nav .categories .category:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.main #nav .categories .active {
+  color: white;
+  border-bottom: solid 1px rgb(0, 184, 255);
+}
+.main #nav .icons {
+  margin-top: 0.5rem;
+}
+.main #nav .icons .fa-solid {
+  padding: 0.5rem;
+  color: gray;
+}
+.main #nav .icons .fa-solid:nth-child(2) {
+  color: white;
+}
+.main #nav .icons:hover {
+  cursor: pointer;
+}
+.main .posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.main .posts .user {
+  display: flex;
+  padding: 1rem;
+}
+.main .posts .user .follow {
+  color: lightskyblue;
+  text-align: right;
+  margin-left: 2rem;
+}
+.main .posts .user .follow:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+.main .posts .image {
+  background-color: gray;
+  flex: 1;
+  height: 20rem;
+}
+.main .posts .post-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-4 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-5 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-6 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-7 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-8 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-9 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-10 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-11 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-12 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-13 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-14 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-15 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-16 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-17 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-18 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-19 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-20 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-21 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-22 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-23 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-24 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-25 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-26 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-27 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-28 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-29 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-30 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-31 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-32 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-33 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-34 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-35 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-36 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-37 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .post-38 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 20;
+  margin-bottom: 2rem;
+}
+.main .posts .post-39 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 0;
+  margin-bottom: 0rem;
+}
+.main .posts .post-40 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39, 39, 39);
+  grid-row-end: span 10;
+  margin-bottom: 1rem;
+}
+.main .posts .about {
+  padding: 1rem;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+.main .posts .about .description {
+  padding: 1rem;
+  font-style: italic;
+}
+.main .posts .about .stats {
+  display: flex;
+  justify-content: space-between;
+}
+.main .posts .about .stats .notki {
+  padding: 0.4rem;
+  border: 1px solid rgba(128, 128, 128, 0.378);
+  border-radius: 1rem;
+}
+.main .posts .about .stats .like {
+  padding: 0.4rem;
+  color: lightblue;
+}
+.main .posts .about .stats .like:hover {
+  background-color: rgb(32, 32, 32);
+  color: aquamarine;
+  cursor: pointer;
+}
+.main .trending {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+.main .trending .icon {
+  background-color: silver;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.main .trending .text {
+  padding: 0.4rem;
+  flex: 1;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.main .trending .text .topic {
+  font-weight: bold;
+}
+.main .trending .text .hashtags {
+  color: lightgray;
+  font-size: 0.75rem;
+}
+.main .trending .num {
+  margin: 0.3rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 1rem;
+  padding-top: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: black;
+}
+
+#right-section {
+  margin-left: 1rem;
+}
+#right-section .szukaj {
+  display: flex;
+  width: 12rem;
+  margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  background-color: rgb(39, 39, 39);
+  border: 1px solid gray;
+}
+#right-section .szukaj i {
+  text-align: center;
+  margin-right: 0.4rem;
+}
+#right-section .szukaj #szukaj {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border: none;
+}
+#right-section .box {
+  background-color: rgb(39, 39, 39);
+  width: 12.4rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+#right-section .box .title {
+  padding: 0.6rem 0.6rem 0.6rem 0.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+}
+#right-section .box .avatar {
+  padding: 0.8rem;
+  margin: 0.55rem;
+  background-color: gray;
+}
+#right-section .box .description {
+  flex: 1;
+  margin-top: 0.6rem;
+}
+#right-section .box .description .bio {
+  font-size: 0.6rem;
+}
+#right-section .box .follow {
+  padding-top: 1rem;
+  color: lightskyblue;
+  font-size: 0.6rem;
+}
+#right-section .box .follow:hover {
+  color: lightseagreen;
+}
+#right-section .box .follow i {
+  padding-right: 0.2rem;
+  color: gray;
+}
+#right-section .box .user-1 {
+  display: flex;
+}
+#right-section .box .user-1:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+#right-section .box .user-2 {
+  display: flex;
+}
+#right-section .box .user-2:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+#right-section .box .user-3 {
+  display: flex;
+}
+#right-section .box .user-3:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+#right-section .box .user-4 {
+  display: flex;
+}
+#right-section .box .user-4:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  font-size: 1.3rem;
+  bottom: 0;
+  width: 200rem;
+  padding: 2rem;
+  padding-bottom: 0;
+  padding-left: 40rem;
+  background-color: rgb(124, 92, 255);
+}
+#footer .buttons {
+  display: flex;
+  padding: 1rem;
+  width: 30rem;
+  gap: 2rem;
+  justify-content: center;
+}
+#footer .buttons .button-1 {
+  background-color: black;
+  padding: 1rem;
+}
+#footer .buttons .button-1:hover {
+  cursor: pointer;
+}
+#footer .buttons .button-2 {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-weight: bold;
+}
+#footer .buttons .button-2:hover {
+  cursor: pointer;
+}
+
+.trend-1 {
+  background-color: #5b7c29;
+  display: flex;
+}
+.trend-1:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-1 > .num {
+  background-color: rgb(136, 185, 61);
+}
+
+.trend-2 {
+  background-color: #ad7000;
+  display: flex;
+}
+.trend-2:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-2 > .num {
+  background-color: orange;
+}
+
+.trend-3 {
+  background-color: #ad0000;
+  display: flex;
+}
+.trend-3:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-3 > .num {
+  background-color: red;
+}
+
+.trend-4 {
+  background-color: #ad00ad;
+  display: flex;
+}
+.trend-4:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-4 > .num {
+  background-color: magenta;
+}
+
+.trend-5 {
+  background-color: #2e002e;
+  display: flex;
+}
+.trend-5:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-5 > .num {
+  background-color: purple;
+}
+
+.trend-6 {
+  background-color: #002e00;
+  display: flex;
+}
+.trend-6:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-6 > .num {
+  background-color: green;
+}
+
+.trend-7 {
+  background-color: #656511;
+  display: flex;
+}
+.trend-7:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-7 > .num {
+  background-color: rgb(171, 171, 28);
+}
+
+.trend-8 {
+  background-color: #864804;
+  display: flex;
+}
+.trend-8:hover {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.trend-8 > .num {
+  background-color: rgb(213, 114, 7);
+}/*# sourceMappingURL=style.css.map */
